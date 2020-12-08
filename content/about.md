@@ -17,5 +17,3 @@ I've largely lived in the early-stage startup world. I love to bring order to ch
 I've done Ruby on Rails development, Python Machine learning (lots of matrix multiplication), and most recently, DevOps and Site Reliability Engineering.
 
 I've primarily worked in AWS, but use and build systems using Kubernetes for container orchestration.
-
-Cray-crazy
