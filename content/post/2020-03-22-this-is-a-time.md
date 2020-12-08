@@ -4,7 +4,6 @@ title: "This is a time"
 date: 2020-03-22 11:26:00 -0700
 ---
 
-# This is a time
 To stabilize. 
 
 To grow in strength. 
