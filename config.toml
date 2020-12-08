@@ -25,7 +25,7 @@ customCss = []
 customJs = []
 mainSections = ["post"]
 images = ["images/joel-profile.jpg"]
-doNotLoadAnimations = false
+doNotLoadAnimations = true
 # Google Site Verification
 #googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
