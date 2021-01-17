@@ -13,3 +13,4 @@ fields:
   label: date
 pages:
 - content/post/testing-1-2-3.md
+- content/post/why-cue.md
