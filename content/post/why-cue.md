@@ -1,5 +1,5 @@
 +++
-date = ""
+date = 2021-01-25T07:00:00Z
 draft = true
 layout = ""
 title = "Why CUE?"
