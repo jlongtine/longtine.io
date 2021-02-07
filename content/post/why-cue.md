@@ -7,7 +7,7 @@ title = "Why I chose CUE"
 +++
 ### Preamble
 
-A few pieces of context before I dive in. This is intended to be the first of many posts about CUE and how me and my team at Gloo (gloo.us) are using it on our Site Reliability/Platform Team. If I'm not publishing more posts... I give you permission to give me shit about it (nicely, please) on [Twitter](https://twitter.com/jlongtine). Along those lines, if there are aspects of CUE that you'd love to know more about, feel free to let me know, on Twitter or CUE Slack! I'd love your feedback, as well. 
+A few pieces of context before I dive in. This is intended to be the first of many posts about CUE and how me and my team at Gloo (gloo.us) are using it on our Site Reliability/Platform Team. If I'm not publishing more posts... I give you permission to give me shit about it (nicely, please) on [Twitter](https://twitter.com/jlongtine). Along those lines, if there are aspects of CUE that you'd love to know more about, feel free to let me know, on Twitter or [CUE Slack](https://cuelang.org/community/)! I'd love your feedback, as well. 
 
 Onward!
 
@@ -15,9 +15,11 @@ Onward!
 
 There are a lot of config languages and tools out there. 
 
-YAML, JSON, HCL, Jsonnet, Kustomize, TOML... and so many more.
+YAML, JSON, HCL, Jsonnet, Kustomize, TOML... and so many more. Why should we bother with another? I'm not going to give a grand overview of this space... at least not yet... Cedric Charly has you covered here: [The Configuration Complexity Curse](https://blog.cedriccharly.com/post/20191109-the-configuration-complexity-curse/)
 
-Me and my team at Gloo (gloo.us) were using YAML CloudFormation templates with nested stacks and got to a place where we needed something better, something more. 
+So, instead, let's begin with a story. 
+
+Me and my team at Gloo (gloo.us) were using YAML CloudFormation templates with nested stacks and got to a place where we needed something better, something more. Reusable code. 
 
 I found [Jsonnet](https://jsonnet.org/), and started to use it. There's a lot to like about it, honestly. I think the biggest benefits of it are around boilerplate reduction and some ability to standardize the structure of your configuration. Kubernetes labels come to mind. But something about the function -> struct and override mechanisms didn't quite sit well with me. So, we kept looking. 
 
