@@ -5,9 +5,13 @@ layout = ""
 title = "Why I chose CUE"
 
 +++
+### Preamble
+
 A few pieces of context before I dive in. This is intended to be the first of many posts about CUE and how me and my team at Gloo (gloo.us) are using it on our Site Reliability/Platform Team. If I'm not publishing more posts... I give you permission to give me shit about it (nicely, please) on [Twitter](https://twitter.com/jlongtine). Along those lines, if there are aspects of CUE that you'd love to know more about, feel free to let me know, on Twitter or CUE Slack! I'd love your feedback, as well. 
 
 Onward!
+
+### Why?
 
 There are a lot of config languages and tools out there. 
 
