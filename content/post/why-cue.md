@@ -61,7 +61,7 @@ This is where the Value Lattice and Constraints come into the picture. In `two.c
 
 There are a number of other features in the language that help to flexibly apply these ideas against configuration, but these are the really important features, in my opinion. They provide the backbone on which everything else sits.
 
-From here, I think it's worthwhile to show a few examples of how we're use CUE at Gloo. I think it might help clarify 
+From here, I think it's worthwhile to show a few examples of how we're use CUE at Gloo. I think it might help clarify why I believe these features are so important. 
 
 ### Why do we need another config language?
 
