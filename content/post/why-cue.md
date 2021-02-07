@@ -21,13 +21,15 @@ So, I think it'd be useful to speak to the features of the language that had us 
 
 As our infrastructure grew in complexity, and given where I imagined it would continue to go... I knew we had to make sure that we had tools to keep that complexity in check.
 
-CUE is a relatively simple language... But some of its feature combine to create a lot of power. Commutativity. Unification. Value Lattice/Constraints. 
+CUE is a relatively simple language... But a few of its feature combine to create a lot of power. Commutativity + Unification. Value Lattice/Constraints. 
 
 Let's start with **Commutativity**. From [Wikipedia](https://en.wikipedia.org/wiki/Commutative_property):
 
 > In [mathematics](https://en.wikipedia.org/wiki/Mathematics "Mathematics"), a [binary operation](https://en.wikipedia.org/wiki/Binary_operation "Binary operation") is **commutative** if changing the order of the [operands](https://en.wikipedia.org/wiki/Operand "Operand") does not change the result.
 
 As described in depth in that article, this basically means: order doesn't matter. In CUE there is no overriding of values. If a value is set to something concrete, it can't be another concrete value somewhere else.
+
+Unification describes what happens with a given field across files. 
 
 As an example:
 
@@ -37,7 +39,29 @@ As an example:
     // two.cue
     fruit: "banana"
 
-This will not evaluate in CUE. 
+This will not evaluate in CUE, because when the fields are unified, they are not equal to one another.
+
+As a potentially interesting counter-example, this _does_ evaluate in CUE: 
+
+    // one.cue
+    fruit: "apple"
+    
+    // two.cue
+    fruit: string
+
+This is where the Value Lattice and Constraints come into the picture. In `two.cue`, `fruit: string` defines a constraint that `fruit` be of type `string`. That gets unified with `"apple"`, which... surprise... is a `string`. This applies for all of the types in CUE. 
+
+    i: int
+    i: 10
+    
+    // which is equivalent to 
+    i: int & 10
+    
+    // & is the unification operator that is also implied by defining a field multiple times. 
+
+There are a number of other features in the language that help to flexibly apply these ideas against configuration, but these are the really important features, in my opinion. They provide the backbone on which everything else sits.
+
+From here, I think it's worthwhile to show a few examples of how we're use CUE at Gloo. I think it might help clarify 
 
 ### Why do we need another config language?
 
