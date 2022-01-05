@@ -17,7 +17,7 @@ enableRobotsTXT = true
 [params]
 title = "Joel Longtine"
 author = "Joel Longtine"
-description = "Site Reliability Architect and Builder."
+description = "Site Reliability Architect and Builder. Currently at dagger.io"
 profilePicture = "images/joel-profile.jpg"
 keywords = ""
 favicon = "favicons/"
