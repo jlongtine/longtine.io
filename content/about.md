@@ -1,5 +1,5 @@
 +++
-aliases = ["about-us", "about-hugo", "contact"]
+aliases = ["about-us", "contact"]
 author = "Joel Longtine"
 date = 2019-02-28T00:00:00Z
 description = "Joel Longtine"
@@ -18,4 +18,6 @@ I've done Ruby on Rails development, Python Machine learning (lots of matrix mul
 
 I've primarily worked in AWS, but use and build systems using Kubernetes for container orchestration.
 
-My latest technology obsession is [CUE](https://www.cuelang.org/ "CUE")
+My latest technology obsessions are [CUE](https://www.cuelang.org/ "CUE") and [Buildkit](https://github.com/moby/buildkit).
+
+I work at [Dagger](https://dagger.io/). 
